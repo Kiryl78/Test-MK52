@@ -1,6 +1,6 @@
 public class Calculator {
 
-    public static int Operation (int op1, int op2, char ops) {
+    public static int operation (int op1, int op2, char ops) {
       int IntRes = 0;
       switch (ops) {
           case '+':
@@ -21,7 +21,7 @@ public class Calculator {
     return IntRes;
   }
 
-  public static boolean AreYouIdiotOperand (int Op, char Ops) {
+  public static boolean areYouIdiotOperand (int Op, char Ops) {
       boolean LocalIdiot;
       if (Ops == '/' && Op == 0 )   {
           System.out.println("MK52: You couldn't divide on 0 !");
@@ -30,7 +30,7 @@ public class Calculator {
       return LocalIdiot;
   }
 
-  public static boolean AreYouIdiotOperation (char Ops) {
+  public static boolean areYouIdiotOperation (char Ops) {
          boolean LocalIdiot;
          if (Ops == '/' ||  Ops == '+' || Ops == '-' || Ops == '*' ) {
              LocalIdiot = false;
